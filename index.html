@@ -18,8 +18,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a id="menu_home" class="nav-link" href="javascript:void(0);">首頁 <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a id="menu_home" class="nav-link" href="javascript:void(0);">首頁</a>
                 </li>
                 <li class="nav-item">
                   <a id="menu_money" class="nav-link" href="javascript:void(0);">賺錢</a>
@@ -134,9 +134,8 @@
 
 <script>
     $(document).ready(function(){
-    
         $(function(){ $('#menu_money').click(function(){ 
-            $('html,body').animate({scrollTop:$('#money').offset().top - 50}, 500);});  
+            $('html,body').animate({scrollTop:$('#money').offset().top - 50}, 500);}); 
         }); 
         $(function(){ $('#menu_change').click(function(){ 
             $('html,body').animate({scrollTop:$('#change').offset().top - 50}, 500);});  

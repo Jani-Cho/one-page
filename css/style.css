@@ -101,7 +101,7 @@ img.bn {
 
 @media (max-width: 576px) {
   img.bn {
-    margin-top: 45px;
+    margin-top: 0;
   }
 }
 
@@ -264,8 +264,12 @@ img.bn {
 \*----------*/
 @media (max-width: 768px) {
   .navbar{
-    width: 33%;
+    width: 65px;
     background-color: rgba(255, 255, 255 , 0.3)!important;
+  }
+  .navbar-nav .nav-link{
+    margin: 0;
+    padding: 15px 0;
   }
 
 }
