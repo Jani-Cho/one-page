@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta property="fb:app_id" content="2601760400062604"/>
+    <meta property="fb:admins" content="2601760400062604"/> -->
+    <meta property="fb:app_id" content="694091524714108"/>
+    <meta property="fb:admins" content="694091524714108"/>
     <title>人手一機 掌握先機</title>
     
     <link rel="stylesheet" href="vendor/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -10,8 +14,30 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body >
-    <header>
+<body ><div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0&appId=2601760400062604&autoLogAppEvents=1"></script> -->
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '2683987438590077',
+            xfbml      : true,
+            version    : 'v7.0'
+          });
+          FB.AppEvents.logPageView();
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0&appId=2683987438590077&autoLogAppEvents=1"></script>
+<header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,6 +61,12 @@
           </nav>
         <img class="bn" src="images/phone.jpg" alt="">
     </header>
+          <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
     <section id="money">
         <div class="title__block">
             <h2 class="animate__animated animate__fadeIn"><span class="front"></span>在台灣賺錢的方式已經不同了<span class="back"></span></h2>
@@ -115,7 +147,7 @@
             <img class="line_fb" src="images/talk.jpg" alt="">
         </div>
         <div class="block__fb">
-            <img class="block__img" src="images/fb.jpg" alt="">
+            <div class="fb-comments" data-href="https://jani-cho.github.io/one-page/index.html" data-numposts="10" data-width=""></div>            <!-- <div class="fb-comments" data-href="http://onethephone.net" data-numposts="5" data-width=""></div> -->
         </div>
     </section>
     <footer class="footer">
