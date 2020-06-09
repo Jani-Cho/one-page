@@ -15,7 +15,28 @@
 </head>
 
 <body>
+    <!-- facebook留言板 -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '694091524714108',
+                xfbml: true,
+                version: 'v7.0'
+            });
+            FB.AppEvents.logPageView();
+        };
 
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -42,8 +63,7 @@
         </nav>
         <img class="bn" src="images/phone.jpg" alt="">
     </header>
-    <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
-    </div>
+
     <section id="money">
         <div class="title__block">
             <h2 class="animate__animated animate__fadeIn"><span class="front"></span>在台灣賺錢的方式已經不同了<span
@@ -126,28 +146,8 @@
             <img class="line_fb" src="images/talk.jpg" alt="">
         </div>
         <div class="block__fb">
-                <!-- facebook留言板 -->
-            <script>
-                window.fbAsyncInit = function () {
-                    FB.init({
-                        appId: '694091524714108',
-                        xfbml: true,
-                        version: 'v7.0'
-                    });
-                    FB.AppEvents.logPageView();
-                };
-
-                (function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) {
-                        return;
-                    }
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://connect.facebook.net/en_US/sdk.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-            </script>
+            <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+            </div>
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous"
                 src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0&appId=694091524714108&autoLogAppEvents=1">
