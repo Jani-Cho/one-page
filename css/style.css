@@ -249,9 +249,9 @@ img.bn {
 .fixed_contact{
   position: fixed;
   width: 120px;
-  right: 50%;
-  bottom: 2%;
-  transform: translateX(50%);
+  right: 2%;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 
 
