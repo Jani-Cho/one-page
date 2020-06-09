@@ -236,7 +236,8 @@ img.bn {
   display: inline-block;
 }
 
-.footer__btnGroup__link.no-link {
+.footer__btnGroup__link.no-link,
+.fixed_contact.no-link {
   cursor: auto;
 }
 
@@ -247,11 +248,18 @@ img.bn {
 
 .fixed_contact{
   position: fixed;
-  width: 50px;
-  right: 2%;
+  width: 120px;
+  right: 50%;
   bottom: 2%;
+  transform: translateX(50%);
 }
 
+
+@media (max-width: 768px) {
+  .fixed_contact{
+    width: 100px;
+  }
+}
 /*-------------*\
     Animation
 \*-------------*/
