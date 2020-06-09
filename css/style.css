@@ -273,3 +273,9 @@ img.bn {
   }
 
 }
+/*-------------*\
+    FB 留言版
+\*-------------*/
+.fb-like span, .fb-like span iframe{
+  max-width: 100vw;
+}
